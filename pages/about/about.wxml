@@ -1,0 +1,14 @@
+<!--pages/about/about.wxml-->
+<view class='about-body' style='height:{{winHeight}}px'>
+  <view class='about-header'>
+    <image src='../../images/src/logo.png' class='about-logo'></image>
+    <text class='about-title'>干货集中营</text>
+    <text class='about-v-code'>v1.1.0 (24)</text>
+  </view>
+
+  <view class="weui_cell" wx:for="{{AboutList}}" bindtap='onClick' data-title='{{item.text}}' data-url='{{item.url}}'>
+    <view class="weui_cell_bd_p"> {{item.text}} </view>
+    <view wx:if="{{item.isunread}}" class="badge">{{item.unreadNum}}</view>
+    <image class="with_arrow" src="../../images/menu/icon-arrowdown.png " mode="scaleToFill" />
+  </view>
+</view>

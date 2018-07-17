@@ -1,0 +1,12 @@
+<view class='me' style='height:{{winHeight}}px'>
+  <view class='me_top' bindtap='login'>
+    <text class='me_login_title'>用GitHub登录</text>
+    <text class='me_login_content'>登录后可提交干货</text>
+  </view>
+
+  <view class="weui_cell" wx:for="{{ListInfo}}" bindtap='onClick' data-title='{{item.text}}' data-url='{{item.url}}'>
+    <view class="weui_cell_bd_p"> {{item.text}} </view>
+    <view wx:if="{{item.isunread}}" class="badge">{{item.unreadNum}}</view>
+    <image class="with_arrow" src="../../images/menu/icon-arrowdown.png " mode="scaleToFill" />
+  </view>
+</view>

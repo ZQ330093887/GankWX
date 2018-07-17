@@ -1,0 +1,40 @@
+/* pages/detail/detail.wxss */
+
+.page-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 20rpx 20rpx;
+  border-bottom: 1px #f2f1f6 solid;
+}
+
+.page-title {
+  display: flex;
+  font-size: 9px;
+  cursor: pointer;
+  margin-left: 5px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.page-image {
+  width: 10pt;
+  height: 10pt;
+}
+
+.page-content {
+  font-size: 12px;
+  margin: 6px 22px;
+  display: -webkit-box;
+  line-height: 40rpx;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.page-white {
+  font-size: 9px;
+  margin: 0px 22px;
+  color: rgba(0, 0, 0, 0.3);
+}

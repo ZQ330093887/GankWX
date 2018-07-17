@@ -1,0 +1,9 @@
+<!--pages/wetify/wetify.wxml-->
+<scroll-view scroll-y>
+  <view class="wetify_container">
+    <view class="wetify_item" wx:for="{{result}}" bindtap='onClick' data-url='{{item.url}}'>
+      <image class="wetify_icon" src="{{item.url}}" mode="aspectFill" />
+      <text class="wetify_text">{{item.desc}}</text>
+    </view>
+  </view>
+</scroll-view>

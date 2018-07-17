@@ -1,0 +1,7 @@
+<!--pages/category/category.wxml-->
+<view class="menu_container">
+  <view class="menu_item" wx:for="{{menus}}" wx:for-item="menu" bindtap='handleTapMiddle' data-title='{{menu.name}}'>
+    <image class="menu_icon" src=" {{menu.url}}" mode="scaleToFill" />
+    <text class="menu_text">{{menu.name}}</text>
+  </view>
+</view>

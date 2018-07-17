@@ -1,0 +1,31 @@
+<!--pages/login/login.wxml-->
+<!-- toast 提示框 -->
+<include src="../../utils/toast/toast.wxml" />
+<!-- dialog 对话框 -->
+<include src="../../utils/dialog/dialog.wxml" />
+<view class="page_bd">
+  <view class="login_info">
+    <image src='../../images/src/logo.png' class='about-logo'></image>
+  </view>
+
+  <form bindsubmit="formSubmit" bindreset="formReset">
+
+
+    <view class="login_form">
+      <view class="weui-label">账号</view>
+      <input class="weui-input" placeholder="请输入用户名/邮箱地址" type="text" maxlength="20" value="{{account}}" focus="true" name="account" />
+    </view>
+
+    <view class="weui-cell__hd"></view>
+
+    <view class="login_form">
+      <view class="weui-label">密码</view>
+      <input class="weui-input" placeholder="请输入密码" type="password" maxlength="10" value="{{password}}" name="password" />
+    </view>
+
+    <view class="weui-cell__hd"></view>
+    <view class="weui-btn-area">
+      <button class="weui-btn" formType="submit">登录</button>
+    </view>
+  </form>
+</view>

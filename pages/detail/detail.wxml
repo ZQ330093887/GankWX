@@ -1,0 +1,11 @@
+<!--列表页-->
+<scroll-view scroll-y = true >
+  <view class='page-body' wx:for="{{contentlist}}" bindtap='itemClick' data-url='{{item.url}}'>
+    <view class='page-title'>
+      <image class='page-image' src='../../images/src/end_dot.png'></image>
+      <text class='page-title'>{{item.createdAt}}</text>
+    </view>
+    <view class='page-content'>{{item.desc}}</view>
+    <view class='page-white'>{{item.who}}</view>
+  </view>
+</scroll-view>

@@ -1,0 +1,9 @@
+/* pages/home/home.wxss */
+.aaa{
+  width: 100%;
+  height: 80rpx;
+  background-color: red;
+  text-align: center;
+  padding-top: 50rpx;
+  color: white;
+}

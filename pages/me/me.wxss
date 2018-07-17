@@ -1,0 +1,55 @@
+/* pages/me/me.wxss */
+
+.me {
+  background-color: #f2f1f6;
+}
+
+.me_top {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  border-bottom: 10px solid #f2f1f6;
+}
+
+.me_login_content {
+  font-size: 12px;
+  margin-top: 5px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.weui_cell {
+  position: relative;
+  display: flex;
+  background-color: white;
+  padding: 15px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+.weui_cell:nth-child(2n+1) {
+  margin-bottom: 10px;
+}
+
+.badge {
+  position: absolute;
+  top: 18px;
+  right: 40px;
+  width: 15px;
+  height: 15px;
+  line-height: 15px;
+  background: #f00;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 8px;
+}
+
+.with_arrow {
+  position: absolute; 
+  right: 15px;
+  width: 15px;
+  height: 15px;
+}

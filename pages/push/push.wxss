@@ -1,0 +1,47 @@
+/* pages/push/push.wxss */
+
+.push-header {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+}
+
+.push-left {
+  width: 70%;
+  height: 200rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.push-right {
+  width: 30%;
+  height: 200rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.push-title {
+  font-size: 28rpx;
+  margin-left: 50rpx;
+}
+
+.push-sub-title {
+  font-size: 25rpx;
+  margin-top: 6rpx;
+  margin-left: 50rpx;
+  color: #999;
+}
+
+.push-content {
+  font-size: 25rpx;
+  padding: 20px;
+}
+
+.push-next {
+  font-size: 25rpx;
+  padding: 5px 20px;
+}

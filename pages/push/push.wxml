@@ -1,0 +1,16 @@
+<!--pages/push/push.wxml-->
+<view>
+  <view class='push-header' style="background:no-repeat 100% 100% url('../../images/src/notification_bg.png');">
+    <view class="push-left">
+      <text class='push-title'>干货推送</text>
+      <text class='push-sub-title'>有新的干货会第一时间推送给你</text>
+    </view>
+    <view class="push-right">
+      <switch color="#DAA520" checked bindchange="switchChange" />
+    </view>
+  </view>
+  <view class='push-content'>干货推送是利用系统特性解决第三方干货集中营客户端无法拥有原生推送的方案，你可以在这里选择开启或者关闭。你的 iOS 设备可以根据你使用干货集中营的频率和时间智能的安排干货集中营来获取每日更新的干货，并显示在应用图标上。你需要确保以下设置均为正确状态：</view>
+  <view class='push-next'>1. 【设置】-【干货集中营】-【通知】权限为允许状态；</view>
+  <view class='push-next'>2. 【设置】-【干货集中营】-【后台应用刷新】权限为允许状态；</view>
+  <view class='push-next'>3. 如果上述权限都为允许状态，开启干货推送，enjoy it ！</view>
+</view>

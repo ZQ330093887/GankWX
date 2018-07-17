@@ -1,0 +1,24 @@
+<!--pages/wetify/update/update.wxml-->
+<view>
+  <view class="update-body" wx:for="{{updateList}}">
+    <view class='update-header'>
+      <image src='../../images/src/end_dot.png' class='update-img'></image>
+      <view class='update-line'></view>
+    </view>
+    <view class='update-content'>
+      <text class='update-time'>{{item.time}}</text>
+      <view class="update-code"> {{item.vCode}} </view>
+      <view class="update-title">{{item.vTitle}}</view>
+    </view>
+
+  </view>
+
+  <view class='update-footer'>
+    <image src='../../images/src/smile.png' class='update-footer-img'></image>
+    <view class='update-footet-bottom'>
+      <text class='update-footer-title'>感谢你对我的关注,</text>
+      <text class="update-footer-content"> 希望这些更新能给你带来帮助 </text>
+    </view>
+
+  </view>
+</view>

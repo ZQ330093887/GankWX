@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/category/category",
+    "pages/me/me",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/detail/detail",
+    "pages/webview/webview",
+    "pages/wetify/wetify",
+    "pages/push/push",
+    "pages/about/about",
+    "pages/update/update",
+    "pages/login/login"
+  ],
+  "tabBar": {
+    "color": "#464a56",
+    "selectedColor": "#DAA520",
+    "backgroundColor": "#f6f6f6",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "images/tab/new.png",
+        "selectedIconPath": "images/tab/new_active.png"
+      },
+      {
+        "pagePath": "pages/category/category",
+        "text": "分类",
+        "iconPath": "images/tab/category.png",
+        "selectedIconPath": "images/tab/category_active.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "images/tab/me.png",
+        "selectedIconPath": "images/tab/me_active.png"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#404040",
+    "navigationBarTitleText": "首页",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "white"
+  }
+}

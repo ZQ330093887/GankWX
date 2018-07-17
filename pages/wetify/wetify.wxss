@@ -1,0 +1,32 @@
+/* pages/wetify/wetify.wxss */
+
+.wetify_container {
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 20rpx 10rpx;
+}
+
+.wetify_item {
+  position: relative;
+  float: left;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.wetify_icon {
+  width: 100%;
+  height: 330rpx;
+  padding: 0rpx 10rpx;
+  box-sizing: border-box;
+  float: left;
+}
+
+.wetify_text {
+  position: relative;
+  font-size: 12px;
+  float: left;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
