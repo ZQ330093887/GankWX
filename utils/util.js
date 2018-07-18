@@ -36,11 +36,18 @@ function clearError(that) {
   })
 }
 
+//分割字符串
+function getStringSplitIndex(date,index) {
+  var arr = date.toDateString().split(/ /);  //分割字符串,- / : 空格
+  return arr[index];
+}
+
+
 module.exports = {
   formatTime: formatTime,
   trim: trim,
   isError: isError,
   clearError: clearError,
+  getStringSplitIndex: getStringSplitIndex
 
 }
-

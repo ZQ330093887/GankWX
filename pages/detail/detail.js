@@ -25,6 +25,9 @@ Page({
 
   },
 
+  /**
+   * 刷新
+   */
   onPullDownRefresh: function() {
     // Do something when pull down.
     console.log('--------下拉刷新-------');　
@@ -37,6 +40,9 @@ Page({
     that.loadingData();
   },
 
+  /**
+   * 加载更多
+   */
   onReachBottom: function() {
     // Do something when page reach bottom.
     console.log('circle 下一页');
@@ -51,7 +57,9 @@ Page({
     self.loadingData();
   },
 
-  // 获取数据  pageIndex：页码参数
+  /**
+   * 获取数据  pageIndex：页码参数
+   */
   loadingData: function() {
     wx.showLoading({
       title: '',
@@ -67,11 +75,11 @@ Page({
         wx.hideLoading()
         wx.stopPullDownRefresh()
         wx.hideNavigationBarLoading()
-        if (pageIndex==1){//下拉刷新
+        if (pageIndex == 1) { //下拉刷新
           self.setData({
             contentlist: res.data.results,
           })
-        }else{//加载更多
+        } else { //加载更多
           var tempArray = self.data.contentlist;
           tempArray = tempArray.concat(res.data.results);
           self.setData({
@@ -82,6 +90,9 @@ Page({
     })
   },
 
+  /**
+   * 点击事件
+   */
   itemClick: function(event) {
     var $newsUrl = event.currentTarget.dataset.url;
     console.log($newsUrl);

@@ -1,2 +1,30 @@
 <!--pages/home/home.wxml-->
-<view class='aaa'>首页</view>
+<scroll-view scroll-y>
+  <view class='home-body'>
+    <view class='home-nav'>
+      <image class='home-img' src='{{contentlist.results["福利"][0].url}}' bindtap='clickImage' data-url='{{contentlist.results["福利"][0].url}}'></image>
+      <view class='home-history' bindtap='clickHistory'>
+        <image class='home-img-bg' src='../../images/src/date_bg.png'></image>
+        <text class='home-history-d'>{{day}}</text>
+        <text class='home-history-m'>{{month}}</text>
+      </view>
+    </view>
+
+    <view class='page-list'>
+      <block wx:for="{{contentlist.category}}">
+        <view class='home-list' wx:if='{{item !="福利"}}'>{{item}}</view>
+
+        <block wx:for="{{contentlist.results[item]}}">
+          <view bindtap='onClick' data-url='{{item.url}}'>
+            <view class='page-title'>
+              <image class='page-image' src='../../images/src/end_dot.png'></image>
+              <text class='page-title'>{{item.createdAt}}</text>
+            </view>
+            <view class='page-content'>{{item.desc}}</view>
+            <view class='page-white'>{{item.who}}</view>
+          </view>
+        </block>
+      </block>
+    </view>
+  </view>
+</scroll-view>
