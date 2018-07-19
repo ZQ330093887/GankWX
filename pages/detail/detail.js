@@ -66,7 +66,7 @@ Page({
     })
     var self = this;
     var pageIndex = self.data.currentPage;
-    var url = 'http://gank.io/api/data/' + self.data.titleInfo + '/10/' + pageIndex;
+    var url = 'https://gank.io/api/data/' + self.data.titleInfo + '/10/' + pageIndex;
     console.log(url)
     wx.request({
       url: url,

@@ -52,7 +52,7 @@ Page({
   loadingData: function() {
     var that = this;
     var pageIndex = that.data.currentPage;
-    var url = 'http://gank.io/api/data/福利/10/' + pageIndex;
+    var url = 'https://gank.io/api/data/福利/10/' + pageIndex;
     console.log(url);
     wx.showLoading({
       title: '',

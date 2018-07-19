@@ -17,7 +17,7 @@ Page({
       title: '加载中',
     })
     wx.request({
-      url: 'http://gank.io/api/day/history',
+      url: 'https://gank.io/api/day/history',
       success: function (res) {
         // console.log(res.data.results)
         wx.hideLoading()

@@ -4,7 +4,7 @@
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": false,
+		"urlCheck": true,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
@@ -12,8 +12,8 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.0.4",
-	"appid": "wx118dc9b14424e425",
-	"projectname": "GankWX",
+	"appid": "wx2b9c1e06ca75e2ee",
+	"projectname": "GankWXObject",
 	"isGameTourist": false,
 	"condition": {
 		"search": {
