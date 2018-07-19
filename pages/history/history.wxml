@@ -1,0 +1,2 @@
+<!--pages/history/history.wxml-->
+<calendar selected="{{selected}}"/>

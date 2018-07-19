@@ -1,0 +1,46 @@
+<view class="calendar-wrapper {{dateShow?'active':''}}">
+  <view class="calendar-panel">
+    <view class='have'>
+    <image class='have-img' src='../../images/src/has_gank.png'></image>
+      有干货
+    </view>
+    <view class="date-befor" data-id="0" data-type="month" bindtap='dataBefor'>
+      <text class="iconfont">
+        <text class='left color'></text>
+      </text>
+    </view>
+    <view class="calendar-panel-box">
+      <view>{{canlender.year}}年</view>
+      <view>{{canlender.month}}月</view>
+    </view>
+    <view class="date-after" data-id="1" data-type="month" bindtap='dataBefor'>
+      <text class="iconfont">
+        <text class='right color'></text>
+      </text>
+    </view>
+    <view class='backtoday' bindtap='backtoday'>
+      回到今天
+    </view>
+  </view>
+  <view class="calendar-header">
+    <view>日</view>
+    <view>一</view>
+    <view>二</view>
+    <view>三</view>
+    <view>四</view>
+    <view>五</view>
+    <view>六</view>
+  </view>
+  <view class="calendar-body">
+    <block wx:for="{{canlender.weeks}}" wx:for-item="weeks" wx:for-index="week" wx:key="weeks">
+      <view class="calender-body-date-week">
+        <block wx:for="{{weeks}}" wx:for-item="day" wx:key="day">
+          <view class="date {{canlender.month === day.month? '' : 'placeholder'}} {{day.have?'date-current': ''}} " data-week="{{week}}" data-index="{{index}}" data-ischeck="{{day.have}}" bindtap='selectDay'>
+
+            {{day.date}}
+          </view>
+        </block>
+      </view>
+    </block>
+  </view>
+</view>
