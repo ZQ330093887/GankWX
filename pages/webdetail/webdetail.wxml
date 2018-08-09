@@ -1,0 +1,19 @@
+<!--pages/webdetail/webdetail.wxml-->
+<view>
+  <view class="login_info">
+    <image src='../../images/src/logo.png' class='about_logo'></image>
+  </view>
+
+  <view class='login_info_title'>
+    <text class='login_title'>微信小程序不支持打开非业务域名，所以暂时只能复制链接到浏览器中打开，还请各位老铁谅解</text>
+  </view>
+
+  <view class='tblin_items_txt'>
+    {{newsUrl}}
+  </view>
+  <!-- 复制的对象-->
+  <view class="search-cell" bindtap='copyTBL'>
+    <button class="btn-search">一键复制</button>
+  </view>
+  <!-- 复制操作 -->
+</view>

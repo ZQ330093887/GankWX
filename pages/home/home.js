@@ -90,7 +90,7 @@ Page({
     var $url = event.currentTarget.dataset.url;
     // console.log($url+":url")
     wx.navigateTo({
-      url: '../webview/webview?newsUrl=' + $url,
+      url: '../webdetail/webdetail?newsUrl=' + $url,
     })
   },
 

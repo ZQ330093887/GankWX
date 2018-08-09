@@ -1,0 +1,53 @@
+/* pages/webdetail/webdetail.wxss */
+
+.login_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+}
+
+.about_logo {
+  width: 120rpx;
+  height: 130rpx;
+}
+
+.login_info_title {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+}
+
+.login_title {
+  width: 100%;
+  font-size: 30rpx;
+}
+
+.tblin_items_txt {
+  width: 100%;
+  height: 30rpx;
+  text-align: center;
+  font-size: 25rpx;
+  margin: 20rpx;
+}
+
+.search-cell {
+  margin-top: 30px;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  font-size: 13px;
+}
+
+.btn-search {
+  border-radius: 0px;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  font-size: 13px;
+  font-family: "微软雅黑";
+}

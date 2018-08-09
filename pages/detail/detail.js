@@ -98,7 +98,7 @@ Page({
     console.log($newsUrl);
     wx.navigateTo({
       //跳转到详情
-      url: '../webview/webview?newsUrl=' + $newsUrl,
+      url: '../webdetail/webdetail?newsUrl=' + $newsUrl,
     })
   }
 })

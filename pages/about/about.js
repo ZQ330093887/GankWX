@@ -51,19 +51,19 @@ Page({
     if ($title == "关于作者") {
       wx.navigateTo({
         //跳转到详情
-        url: '../webview/webview?newsUrl=' + $newsUrl,
+        url: '../webdetail/webdetail?newsUrl=' + $newsUrl,
       })
     } else if ($title == "作者 Github") {
       wx.navigateTo({
-        url: '../webview/webview?newsUrl=' + $newsUrl,
+        url: '../webdetail/webdetail?newsUrl=' + $newsUrl,
       })
     } else if ($title == "致谢干货集中营") {
       wx.navigateTo({
-        url: '../webview/webview?newsUrl=' + $newsUrl,
+        url: '../webdetail/webdetail?newsUrl=' + $newsUrl,
       })
     } else if ($title == "Gank 的 github仓库") {
       wx.navigateTo({
-        url: '../webview/webview?newsUrl=' + $newsUrl,
+        url: '../webdetail/webdetail?newsUrl=' + $newsUrl,
       })
     }
   },

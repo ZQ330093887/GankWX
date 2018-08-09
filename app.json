@@ -12,7 +12,8 @@
     "pages/about/about",
     "pages/update/update",
     "pages/login/login",
-    "pages/history/history"
+    "pages/history/history",
+    "pages/webdetail/webdetail"
   ],
   "tabBar": {
     "color": "#464a56",

@@ -64,15 +64,15 @@ Page({
       })
     } else if ($title == "感谢编辑们") {
       wx.navigateTo({
-        url: '../webview/webview?newsUrl=' + $newsUrl,
+        url: '../webdetail/webdetail?newsUrl=' + $newsUrl,
       })
     } else if ($title == "Gank 的IOS版") {
       wx.navigateTo({
-        url: '../webview/webview?newsUrl=' + $newsUrl,
+        url: '../webdetail/webdetail?newsUrl=' + $newsUrl,
       })
     } else if ($title == "Gank 的Android版") {
       wx.navigateTo({
-        url: '../webview/webview?newsUrl=' + $newsUrl,
+        url: '../webdetail/webdetail?newsUrl=' + $newsUrl,
       })
     } else if ($title == "关于") {
       wx.navigateTo({
