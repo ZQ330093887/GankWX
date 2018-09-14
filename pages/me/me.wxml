@@ -1,12 +1,40 @@
 <view class='me' style='height:{{winHeight}}px'>
-  <view class='me_top' bindtap='login'>
-    <text class='me_login_title'>用GitHub登录</text>
-    <text class='me_login_content'>登录后可提交干货</text>
+  <view class='me_top_hander_top'>
+    <view class='me_top_hander'>
+      <image src="../../images/src/logo.png" class="profile"></image>
+      <view class='me_top' bindtap='login'>
+        <text class='me_login_title'>用GitHub登录</text>
+        <text class='me_login_content'>登录后可提交干货</text>
+      </view>
+    </view>
+
+    <view class='me_top_nav'>
+      <view class='me_nav_01' bindtap='wxClick'>
+        <text class='me_nav_title'>100</text>
+        <text class='me_nav_content'>小程序版</text>
+      </view>
+      <view class='me_nav_02' bindtap='wxflutter'>
+        <text class='me_nav_title'>120</text>
+        <text class='me_nav_content'>Flutter版</text>
+      </view>
+      <view class='me_nav_03' bindtap='wxAndroid'>
+        <text class='me_nav_title'>190</text>
+        <text class='me_nav_content'>Android版</text>
+      </view>
+      <view class='me_nav_04' bindtap='wxIOS'>
+        <text class='me_nav_title'>189</text>
+        <text class='me_nav_content'>ios版本</text>
+      </view>
+    </view>
   </view>
 
-  <view class="weui_cell" wx:for="{{ListInfo}}" bindtap='onClick' data-title='{{item.text}}' data-url='{{item.url}}'>
-    <view class="weui_cell_bd_p"> {{item.text}} </view>
-    <view wx:if="{{item.isunread}}" class="badge">{{item.unreadNum}}</view>
-    <image class="with_arrow" src="../../images/menu/icon-arrowdown.png " mode="scaleToFill" />
+  <view class="menu_item" wx:for="{{menus}}" wx:for-item="menu" bindtap='handleTapMiddle' data-title='{{menu.name}}'>
+    <image class="menu_icon" src=" {{menu.url}}" mode="scaleToFill" />
+    <text class="menu_text">{{menu.name}}</text>
+  </view>
+
+    <view class="menu_item_01" wx:for="{{menus01}}" wx:for-item="menu" bindtap='handleTapMiddle' data-title='{{menu.name}}'>
+    <image class="menu_icon" src=" {{menu.url}}" mode="scaleToFill" />
+    <text class="menu_text">{{menu.name}}</text>
   </view>
 </view>

@@ -1,7 +1,31 @@
 <!--pages/category/category.wxml-->
-<view class="menu_container">
-  <view class="menu_item" wx:for="{{menus}}" wx:for-item="menu" bindtap='handleTapMiddle' data-title='{{menu.name}}'>
-    <image class="menu_icon" src=" {{menu.url}}" mode="scaleToFill" />
-    <text class="menu_text">{{menu.name}}</text>
-  </view>
+<view class="contain">
+  <scroll-view scroll-x="true" class="tab-h" scroll-left="{{scrollLeft}}">
+    <block wx:for="{{tabs}}" wx:key="*this">
+      <view data-current="{{index}}" class="tab-item {{currentTab == index ? 'active' : ''}}" bindtap="swichNav">
+        {{item.name}}
+      </view>
+    </block>
+  </scroll-view>
+  <swiper class="tab-content" current="{{currentTab}}" duration="300" bindchange="switchTab" style="height:{{winHeight}}rpx">
+    <swiper-item class="content-item" wx:for="{{tabs}}" wx:key="*this">
+      <scroll-view scroll-y="true" bindscrolltolower="loadMore" bindscrolltoupper="onPullRefresh" style="height:{{winHeight}}rpx">
+        <view class='{{currentTab==1? "hide":"page-body"}}' wx:for="{{contentlist}}" bindtap='itemClick' data-url='{{item.url}}'>
+          <view class='page-title'>
+            <image class='page-image' src='../../images/src/end_dot.png'></image>
+            <text class='page-title'>{{item.createdAt}}</text>
+          </view>
+          <view class='page-content'>{{item.desc}}</view>
+          <view class='page-white'>{{item.who}}</view>
+        </view>
+
+        <view class="{{1 == currentTab ? 'wetify_container' : 'hide'}}">
+          <view class="wetify_item" wx:for="{{contentlist}}" bindtap='onClick' data-url='{{item.url}}'>
+            <image class="wetify_icon" src="{{item.url}}" mode="aspectFill" />
+            <text class="wetify_text">{{item.desc}}</text>
+          </view>
+        </view>
+      </scroll-view>
+    </swiper-item>
+  </swiper>
 </view>
