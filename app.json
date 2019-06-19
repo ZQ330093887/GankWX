@@ -47,5 +47,6 @@
     "navigationBarTitleText": "首页",
     "navigationBarTextStyle": "white",
     "backgroundColor": "white"
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }

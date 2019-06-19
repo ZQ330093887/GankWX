@@ -2,121 +2,6 @@
   width: 100%;
   height: 100%;
 }
-
-.tab-h {
-  height: 80rpx;
-  width: 100%;
-  box-sizing: border-box;
-  overflow: hidden;
-  line-height: 80rpx;
-  background: #f7f7f7;
-  font-size: 16px;
-  white-space: nowrap;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 99;
-}
-
-.tab-item {
-  padding: 0 36rpx;
-  display: inline-block;
-}
-
-.tab-item.active {
-  color: #daa520;
-  position: relative;
-}
-
-.tab-item.active:after {
-  content: "";
-  display: block;
-  height: 8rpx;
-  width: 56rpx;
-  background: #daa520;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  margin-left: -24rpx;
-  border-radius: 16rpx;
-}
-
-.item-ans {
-  width: 100%;
-  display: flex;
-  flex-grow: row no-wrap;
-  justify-content: space-between;
-  padding: 30rpx;
-  box-sizing: border-box;
-  height: 180rpx;
-  align-items: center;
-  border-bottom: 1px solid #f2f2f2;
-}
-
-.avatar {
-  width: 100rpx;
-  height: 100rpx;
-  position: relative;
-  padding-right: 30rpx;
-}
-
-.avatar .img {
-  width: 100%;
-  height: 100%;
-}
-
-.avatar .doyen {
-  width: 40rpx;
-  height: 40rpx;
-  position: absolute;
-  bottom: -2px;
-  right: 20rpx;
-}
-
-.expertInfo {
-  font-size: 12px;
-  flex-grow: 2;
-  color: #b0b0b0;
-  line-height: 1.5em;
-}
-
-.expertInfo .name {
-  font-size: 16px;
-  color: #000;
-  margin-bottom: 6px;
-}
-
-.askBtn {
-  width: 120rpx;
-  height: 60rpx;
-  line-height: 60rpx;
-  text-align: center;
-  font-size: 14px;
-  border-radius: 60rpx;
-  border: 1px solid #daa520;
-  color: #daa520;
-}
-
-.tab-content {
-  margin-top: 80rpx;
-}
-
-.scoll-h {
-  height: 100%;
-}
-
-.content-item {
-  padding-top: 20rpx;
-}
-
-.page-body {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  padding: 25rpx 25rpx;
-  border-bottom: 1px #f2f1f6 solid;
-}
-
 .page-title {
   display: flex;
   font-size: 9px;
@@ -178,10 +63,19 @@
   text-align: center;
   padding-bottom: 10px;
   padding-top: 5px;
-}
+} 
 
 /*隐藏 */
 
 .hide {
   display: none;
+}
+
+
+
+.margin-top{
+  margin-top:1rpx
+}
+.icon-search{
+padding-left: 20rpx
 }

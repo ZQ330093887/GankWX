@@ -1,16 +1,18 @@
 <!--pages/wetify/update/update.wxml-->
-<view>
-  <view class="update-body" wx:for="{{updateList}}">
-    <view class='update-header'>
-      <image src='../../images/src/end_dot.png' class='update-img'></image>
-      <view class='update-line'></view>
-    </view>
-    <view class='update-content'>
-      <text class='update-time'>{{item.time}}</text>
-      <view class="update-code"> {{item.vCode}} </view>
-      <view class="update-title">{{item.vTitle}}</view>
-    </view>
+<view class="updata-bg">
+  <view class="cu-timeline" wx:for="{{updateList}}">
 
+    <view class='cu-item text-orange'>
+      <view class="bg-gradual-orange content shadow-blur">
+        <view class="cu-capsule radius">
+          <view class="cu-tag bg-white text-orange">{{item.vCode}}</view>
+          <view class="cu-tag line-white">{{item.time}}</view>
+        </view>
+        <view class='margin-top-sm text-content'>
+          <view>{{item.vTitle}}</view>
+        </view>
+      </view>
+    </view>
   </view>
 
   <view class='update-footer'>

@@ -15,6 +15,8 @@
 	"appid": "wx2b9c1e06ca75e2ee",
 	"projectname": "GankWXObject",
 	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
 	"condition": {
 		"search": {
 			"current": -1,

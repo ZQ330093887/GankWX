@@ -1,14 +1,15 @@
 <!--pages/about/about.wxml-->
-<view class='about-body' style='height:{{winHeight}}px'>
-  <view class='about-header'>
-    <image src='../../images/src/logo.png' class='about-logo'></image>
-    <text class='about-title'>干货集中营</text>
-    <text class='about-v-code'>v1.1.0 (24)</text>
-  </view>
 
-  <view class="weui_cell" wx:for="{{AboutList}}" bindtap='onClick' data-title='{{item.text}}' data-url='{{item.url}}'>
-    <view class="weui_cell_bd_p"> {{item.text}} </view>
-    <view wx:if="{{item.isunread}}" class="badge">{{item.unreadNum}}</view>
-    <image class="with_arrow" src="../../images/menu/icon-arrowdown.png " mode="scaleToFill" />
+<view class='margin-xl bg-white padding-xl radius shadow-lg'>
+  <view class='text-center margin-bottom text-lg  text-grey'>关于GankWX</view>
+  <view class='text-content'>
+    <view class='margin-top-sm'>该项目仅仅是我学习整个小程序从开发到上线的一个demo<text class='text-lg text-blue'>不做任何其他用途</text>。</view>
+    <view class='margin-top-sm'>
+      <text class='text-xl text-red'>特别说明:</text>
+    </view>
+    
+    <view class='margin-top-sm' bindtap="onClick" data-url='https://github.com/zhouhaoo/Ganker'>该项目样式借鉴了<text class='text-lg text-blue'>https://github.com/zhouhaoo/Ganker</text>，样式特别漂亮，瞬间拉升了我demo的质量，如果有喜欢的同学可以复制该连接去下载</view>
+    <view class='margin-top-sm'>如果作者追究，请加我QQ：330093887告知，我会及时删除</view>
+    <view class='margin-top-sm'>再次感谢各位支持理解！！！</view>
   </view>
 </view>

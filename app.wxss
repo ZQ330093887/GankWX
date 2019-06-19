@@ -3,6 +3,8 @@
 @import "utils/toast/toast.wxss";
 /* 导入dialog样式 */
 @import "utils/dialog/dialog.wxss";
+@import 'style/icon.wxss';
+@import 'style/colorui.wxss';
 .container {
   height: 100%;
   display: flex;

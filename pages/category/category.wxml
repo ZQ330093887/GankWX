@@ -1,22 +1,31 @@
 <!--pages/category/category.wxml-->
+<wxs module="tools" src="../../tools/dataTool.wxs"></wxs>
 <view class="contain">
-  <scroll-view scroll-x="true" class="tab-h" scroll-left="{{scrollLeft}}">
-    <block wx:for="{{tabs}}" wx:key="*this">
-      <view data-current="{{index}}" class="tab-item {{currentTab == index ? 'active' : ''}}" bindtap="swichNav">
-        {{item.name}}
-      </view>
-    </block>
+
+  <scroll-view scroll-x="true" class="bg-white nav" scroll-left="{{scrollLeft}}">
+    <view class="cu-item {{index==currentTab?'text-yellow cur':''}}" wx:for="{{tabs}}" wx:key="*this" bindtap='swichNav' data-current="{{index}}">
+      {{item.name}}
+    </view>
   </scroll-view>
   <swiper class="tab-content" current="{{currentTab}}" duration="300" bindchange="switchTab" style="height:{{winHeight}}rpx">
     <swiper-item class="content-item" wx:for="{{tabs}}" wx:key="*this">
       <scroll-view scroll-y="true" bindscrolltolower="loadMore" bindscrolltoupper="onPullRefresh" style="height:{{winHeight}}rpx">
         <view class='{{currentTab==1? "hide":"page-body"}}' wx:for="{{contentlist}}" bindtap='itemClick' data-url='{{item.url}}'>
-          <view class='page-title'>
-            <image class='page-image' src='../../images/src/end_dot.png'></image>
-            <text class='page-title'>{{item.createdAt}}</text>
+
+          <view class="cu-card article margin-top no-card">
+            <view class="cu-item shadow padding-top ">
+              <view class="content ">
+                <image wx:if="{{item.images!=null}}" data-gid='{{item.images}}' bindtap="onTabsItemTap" src="{{item.images[0]}}" mode="aspectFill"></image>
+                <view class="desc " data-gid='{{item}}' bindtap="onItemClick">
+                  <view class='text-content '>{{item.desc}}</view>
+                  <view>
+                    <view class='cu-tag bg-cyan light sm round'>{{item.who}}</view>
+                    <view class='cu-tag bg-yellow light sm round'>{{tools.dataTool(10,item.publishedAt)}}</view>
+                  </view>
+                </view>
+              </view>
+            </view>
           </view>
-          <view class='page-content'>{{item.desc}}</view>
-          <view class='page-white'>{{item.who}}</view>
         </view>
 
         <view class="{{1 == currentTab ? 'wetify_container' : 'hide'}}">

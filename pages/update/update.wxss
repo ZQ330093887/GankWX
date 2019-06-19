@@ -1,46 +1,6 @@
 /* pages/wetify/update/update.wxss */
-
-.update-body {
-  padding: 10rpx 30rpx;
-  display: flex;
-  flex-direction: row;
-}
-
-.update-header {
-  width: 5%;
-}
-
-.update-content {
-  width: 95%;
-}
-
-.update-line {
-  width: 2rpx;
-  height: 80%;
-  margin-top: -10rpx;
-  margin-left: 10rpx;
-  background-color: #f2f1f6;
-}
-
-.update-img {
-  width: 25rpx;
-  height: 25rpx;
-}
-
-.update-time {
-  font-size: 24rpx;
-  color: #ccc;
-}
-
-.update-code {
-  font-size: 28rpx;
-  margin-top: 15rpx;
-}
-
-.update-title {
-  font-size: 24rpx;
-  color: #333;
-  margin-top: 20rpx;
+.updata-bg{
+  background: white;
 }
 
 .update-footer {
