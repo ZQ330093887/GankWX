@@ -12,7 +12,7 @@
 ## 特别感谢
 - API提供：[@代码家](https://github.com/daimajia)
 - [干货集中营](http://gank.io/)
-- UI参考[@周豪](https://github.com/zhouhaoo)
+- [UI参考](https://github.com/zhouhaoo)
 
 ## 期待
 - 如果您在使用过程中发现BUG或者觉得有何不合适，欢迎 issues me!
