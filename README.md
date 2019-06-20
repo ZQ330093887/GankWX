@@ -3,7 +3,7 @@
 
 ## 应用截图
 
-| ![1](http://7xkvt5.com1.z0.glb.clouddn.com/gank/Guide1.png) | ![2](http://7xkvt5.com1.z0.glb.clouddn.com/gank/Guide2.png) | ![3](http://7xkvt5.com1.z0.glb.clouddn.com/gank/Guide3.png) | ![4](http://7xkvt5.com1.z0.glb.clouddn.com/gank/Guide4.png) | ![5](http://7xkvt5.com1.z0.glb.clouddn.com/gank/Guide5.png) |
+| ![1](https://upload-images.jianshu.io/upload_images/3278692-c02dcb5ba848c677.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240) | ![2](https://upload-images.jianshu.io/upload_images/3278692-e4de7642a16b20ea.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240) | ![3](https://upload-images.jianshu.io/upload_images/3278692-32ecbd0fe085ec14.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240) | ![4](https://upload-images.jianshu.io/upload_images/3278692-a0793cf12e079620.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240) | ![5](https://upload-images.jianshu.io/upload_images/3278692-37f6bbd9209d3c5e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240) |
 | :--: | :--: | :--: | :--: | :--: |
 | 每日干货 | 历史干货 | 分类搜索 | 个人中心 | 提交干货 |
 
