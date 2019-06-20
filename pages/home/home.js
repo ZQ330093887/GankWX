@@ -57,11 +57,15 @@ Page({
   },
   //获取指定日期的数据
   getHistoryData: function (day) {
+    wx.showLoading({
+      title: '加载中',
+    })
     const that = this;
     this.setLoadState(true)
     apiService.oneDayData(day).then(function (res) {
       console.log(res)
       that.setLoadState(false)
+      wx.hideLoading();
       if (!res.error) {
         that.setData({
           category: res.category.sort(),

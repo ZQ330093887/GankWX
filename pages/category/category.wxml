@@ -20,7 +20,7 @@
                   <view class='text-content '>{{item.desc}}</view>
                   <view>
                     <view class='cu-tag bg-cyan light sm round'>{{item.who}}</view>
-                    <view class='cu-tag bg-yellow light sm round'>{{tools.dataTool(10,item.publishedAt)}}</view>
+                    <view class='cu-tag bg-red light sm round'>{{tools.dataTool(10,item.publishedAt)}}</view>
                   </view>
                 </view>
               </view>
